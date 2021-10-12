@@ -82,6 +82,6 @@ class RegistrationTest {
         $("[data-test-id=name] input").setValue("Демьян Александров");
         $("[data-test-id=phone] input").setValue("+79270000000");
         $("button").click();
-        $(".input_invalid").should(exist);
+        $("#checkbox").find("#input_invalid");
     }
 }
